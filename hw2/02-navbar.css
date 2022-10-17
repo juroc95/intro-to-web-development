@@ -6,11 +6,24 @@ body {
 }
 
 .nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .list-item {
+  float: left;
   background-color: var(--green);
 }
 
 .nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: var(--orange);
 }
