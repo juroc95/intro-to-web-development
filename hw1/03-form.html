@@ -6,48 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>03 - Form</title>
-  <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/03-form.css" /> -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../hw2/03-form.css" />
 </head>
 
 <body>
   <main>
-    <form action="">
-      <h1>Registration Form</h1>
+    <form class="form" action="">
+      <h1 class="heading">Registration Form</h1>
       <!-- Add your code here -->
-      <div>
+      <div class="form-element">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" />
+        <input class="input" type="text" id="username" name="username" />
       </div>
-      <br />
-      <div>
+      <div class="form-element">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <input class="input" type="email" id="email" name="email" />
       </div>
-      <br />
-      <div>
+      <div class="form-element">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" />
+        <input class="input" type="password" id="password" name="password" />
       </div>
-      <br />
       <fieldset>
-        <legend>Would you like to sign up for the newsletter?</legend>
-        <div>
+        <legend class="fieldset">Would you like to sign up for the newsletter?</legend>
+        <div class="radio-button">
           <input type="radio" id="yes" name="answer" value="Yes, sign me up" />
           <label for="yes">Yes, sign me up</label>
+        </div>
+        <div class="radio-button">
           <input type="radio" id="no" name="answer" value="No, thank you" />
           <label for="no">No, thank you</label>
         </div>
       </fieldset>
-      <br />
-      <div>
+      <div class="form-element">
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date" />
+        <input class="input" type="date" id="date" name="date" />
       </div>
-      <br />
-      <div>
-        <input type="submit" name="submit" value="Submit" />
-        <input type="reset" name="reset" value="Reset" />
+      <div class="btn">
+        <input class="btn-primary" type="submit" name="submit" value="Submit" />
+        <input class="btn-secondary" type="reset" name="reset" value="Reset" />
       </div>
     </form>
   </main>

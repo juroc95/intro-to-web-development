@@ -2,16 +2,79 @@
 If you would prefer, you can delete them and use your own classes and style declarations. */
 
 .form {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .form-element {
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 1em;
+}
+
+fieldset {
+    border: 0;
+    margin: 10px;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.fieldset {
+    font-weight: bold;
+}
+
+.radio-button {
+    display: block;
+    margin-left: 10px;
+}
+
+.input {
+    float: right;
+    width: 70%;
 }
 
 .btn {
+    margin: 10px;
 }
 
 .btn-primary {
+    width: 49%;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 3em;
+}
+
+.btn-primary:hover {
+    border: 1px solid var(--black);
+    border-radius: 2px;
+    background-color: var(--orange);
+    color: var(--black);
 }
 
 .btn-secondary {
+    width: 49%;
+    border: 1px solid var(--green);
+    border-radius: 2px;
+    background-color: var(--white);
+    color: var(--green);
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 3em;  
+}
+
+.btn-secondary:hover {
+    background-color: var(--gray3);
+}
+
+.heading {
+    margin-top: 1em;
+    text-transform: uppercase;
 }
