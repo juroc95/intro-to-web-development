@@ -1,4 +1,36 @@
 /* Code for exercise 01-flex */
+body {
+    margin: 0;
+    background-color: lavender;
+}
+
+.flex-container {
+    margin: 0;
+    background-color:darkmagenta;
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+.flex-container .flex-item .item {
+    display: flex;
+    padding: 40px;
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.flex-container .flex-item .item:hover {
+    background-color: green;
+}
+
+.flex-container .flex-item .item:active {
+    background-color: orange;
+}
+
+.flex-container .flex-item .item:focus {
+    border: 2px solid orange;
+}
 
 /* Code for exercise 02-grid */
 
