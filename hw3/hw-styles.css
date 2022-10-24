@@ -1,4 +1,5 @@
 /* Code for exercise 01-flex */
+
 body {
     margin: 0;
     background-color: lavender;
@@ -33,5 +34,93 @@ body {
 }
 
 /* Code for exercise 02-grid */
+
+body {
+    background-color: lavender;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    height: 97vh;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    grid-template-areas:
+        'header     header      header'
+        'jumbotron      jumbotron       jumbotron'
+        'card1      card2       card3'
+        'section        section     section'
+        'footer     footer      footer';
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: jumbotron;
+}
+
+.item3 {
+    grid-area: card1;
+}
+
+.item4 {
+    grid-area: card2;
+}
+
+.item5 {
+    grid-area: card3;
+}
+
+.item6 {
+    grid-area: section;
+}
+
+.item7 {
+    grid-area: footer;
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        height: 97vh;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-areas:
+            'header     header'
+            'jumbotron      jumbotron'
+            'section        section'
+            'card1      card2'
+            'footer     footer';
+    }
+
+    .item5 {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    .grid-container {
+        display: grid;
+        height: 97vh;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'header'
+            'jumbotron'
+            'section'
+            'card1'
+            'card2'
+            'footer';
+    }
+
+    .item5 {
+        display: none;
+    }
+}
 
 /* Code for exercise 03-bootstrap-form */
