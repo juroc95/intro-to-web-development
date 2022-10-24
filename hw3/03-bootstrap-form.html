@@ -12,10 +12,61 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="hw-styles.css" />
   </head>
-  <body>
-    <main>
-      <form>
-        <h1>Contact Form</h1>
+  <body class="bg-dark">
+    <main class="container-fluid mt-5 d-flex justify-content-center">
+      <form class="bg-light p-3">
+        <div class="m-3">
+          <h1 class="text-uppercase">Contact Form</h1>
+        </div>
+        <div class="form-group mb-3 row">
+          <div class="col-sm-4">
+            <label for="username" class="form-label">Username:</label>
+          </div>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="username">
+          </div>
+        </div>
+        <div class="form-group mb-3 row">
+          <div class="col-sm-4">
+            <label for="email" class="form-label">Email:</label>
+          </div>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+        <div class="form-group mb-3 row">
+          <div class="col-sm-4">
+            <label for="password" class="form-label">Password:</label>
+          </div>
+          <div class="col-sm-8">
+            <input type="password" class="form-control" id="password">
+          </div>
+        </div>
+        <div class="form-group mb-3">
+          <fieldset>
+            <legend>Would you like to sign up for the newsletter?</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="yes" name="answer" value="Yes, sign me up" />
+              <label for="yes" class="form-check-label">Yes, sign me up</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="no" name="answer" value="No, thank you" />
+              <label for="no" class="form-check-label">No, thank you</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group mb-3 row">
+          <div class="col-sm-4">
+            <label for="date" class="form-label">Date:</label>
+          </div>
+          <div class="col-sm-8">
+            <input type="date" class="form-control" id="date" />
+          </div>
+        </div>
+        <div class="form-group m-3 text-center">
+          <input type="submit" class="btn btn-primary btn-md" value="Submit" />
+          <input type="reset" class="btn btn-secondary btn-md" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
