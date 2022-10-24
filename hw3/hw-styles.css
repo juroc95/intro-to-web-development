@@ -15,7 +15,7 @@ body {
 
 .flex-container .flex-item .item {
     display: flex;
-    padding: 40px;
+    padding: 29px;
     color: white;
     text-decoration: none;
     flex-wrap: wrap;
