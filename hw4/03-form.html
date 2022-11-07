@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>03 - Form</title>
-    <script defer src="05-form.js"></script>
-  </head>
-  <body>
-    <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
-      </form>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>03 - Form</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../hw2/03-form.css" />
+  <script defer src="03-form.js"></script>
+</head>
+
+<body>
+  <main>
+    <form class="form" action="">
+      <h1 class="heading">Registration Form</h1>
+      <!-- Add your code here -->
+      <div class="form-element">
+        <label for="username">Username:</label>
+        <input class="input" type="text" id="username" name="username" />
+      </div>
+      <div class="form-element">
+        <label for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email" />
+      </div>
+      <div class="form-element">
+        <label for="password">Password:</label>
+        <input class="input" type="password" id="password" name="password" />
+      </div>
+      <fieldset>
+        <legend class="fieldset">Would you like to sign up for the newsletter?</legend>
+        <div class="radio-button">
+          <input type="radio" id="yes" name="answer" value="Yes" />
+          <label for="yes">Yes, sign me up</label>
+        </div>
+        <div class="radio-button">
+          <input type="radio" id="no" name="answer" value="No" />
+          <label for="no">No, thank you</label>
+        </div>
+      </fieldset>
+      <div class="form-element">
+        <label for="date">Date:</label>
+        <input class="input" type="date" id="date" name="date" />
+      </div>
+      <div class="btn">
+        <input class="btn-primary" type="submit" name="submit" value="Submit" />
+        <input class="btn-secondary" type="reset" name="reset" value="Reset" />
+      </div>
+    </form>
+  </main>
+</body>
+
 </html>
