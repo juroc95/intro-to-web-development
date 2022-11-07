@@ -11,13 +11,8 @@ document.addEventListener("submit", function (e) {
   if (
     username_input.value === "" ||
     email_input.value === "" ||
-    date_input.value === "" ||
     password_input.value === ""
   ) {
-    console.warn("You must enter some data to submit this form");
-    return;
-  }
-  if (!radio_yes.checked && !radio_no.checked) {
     console.warn("You must enter some data to submit this form");
     return;
   }
@@ -28,6 +23,12 @@ document.addEventListener("submit", function (e) {
     console.log("Newsletter: " + radio_yes.value);
   } else if (radio_no.checked) {
     console.log("Newsletter: " + radio_no.value);
+  } else {
+    console.log("Newsletter: no submission");
   }
-  console.log("Date: " + date_input.value);
+  if (date_input.value) {
+    console.log("Date: " + date_input.value);
+  } else {
+    console.log("Date: no submission");
+  }
 });
